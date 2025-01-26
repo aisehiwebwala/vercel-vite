@@ -8,4 +8,5 @@ app.get("/api",(req,res)=>{res.send("Hello World!!!")});
 app.use("*",(req,res)=>{
     res.sendFile(path.join(__dirname,"client","dist","index.html"));
 })
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+module.exports = app;
+// app.listen(port, () => console.log(`Example app listening on port ${port}!`))
