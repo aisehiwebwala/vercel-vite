@@ -5,10 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "front_dep_ins": "cd client/ && npm install",
-    "front_build": "cd client/ && npm run build",
-    "build_back": "npm install",
-    "buildd":"npm install && npm install --prefix client && npm run build -- prefix client"
+    "build":"npm install && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
