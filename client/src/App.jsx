@@ -17,7 +17,7 @@ export default function App() {
   return (
     <div>
       <h1>Vercel Test</h1>
-          VAR : {import.meta.env.VITE_VAR}
+        <h2> VAR : {import.meta.env.VITE_VAR} </h2>
       <div> <button onClick={()=>{setVal(getVal - 1)}} >-</button> {getVal} <button onClick={()=>{setVal(getVal + 1)}} >+</button> </div>
       <button onClick={getImage} >Get Image</button>
       <img style={{display:"block"}} src={getURL} alt="NO_IMAGE" />
