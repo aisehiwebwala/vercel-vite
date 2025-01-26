@@ -7,7 +7,7 @@ const fs = require("fs");
 app.use(express.static(path.join(__dirname,"client","dist")));
 app.get("/api",(req,res)=>{res.send("Hello World!!!")});
 app.get("/dir",(req,res)=>{
-    res.send(fs.readdirSync("/"));
+    res.send(fs.readdirSync(__dirname));
 })
 app.use("*",(req,res)=>{
     res.sendFile(path.join(__dirname,"client","dist","index.html"));
