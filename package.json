@@ -8,7 +8,7 @@
     "front_dep_ins": "cd client/ && npm install",
     "front_build": "cd client/ && npm run build",
     "build_back": "npm install",
-    "build": "npm run front_dep_ins && npm run front_build && npm run build_back"
+    "build":"npm install && npm install --prefix client && npm run build -- prefix client"
   },
   "author": "",
   "license": "ISC",
