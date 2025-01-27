@@ -5,7 +5,7 @@ const path = require("path");
 const fs = require("fs");
 
 app.use(express.static(path.join(__dirname,"client","dist")));
-app.get("/api",(req,res)=>{res.send("Hello World!!!")});
+app.get("/api",(req,res)=>{res.send("Hello World!!! : "+process.env.VITE_VAR )});
 app.use("*",(req,res)=>{
     res.sendFile(path.join(__dirname,"client","dist","index.html"));
 })
