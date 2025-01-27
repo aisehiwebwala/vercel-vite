@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Erro: no test specified\" && exit 1",
-    "build": "npm install && echo 'server build script called'"
+    "build": "npm install && echo 'server build script called' "
   },
   "author": "yolo",
   "license": "ISC",
